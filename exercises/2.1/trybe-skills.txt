@@ -2,13 +2,9 @@ O que eu vou aprender na Trybe:
 
 - Unix
 - Bash
-- Git
-<<<<<<< HEAD
-HTML 
+- Git 
 - CSS
-=======
 - HTML 
 - Python
 - JavaScript
 
->>>>>>> d3297476ea617ee142bf5344c9fc886aeb0f6914
