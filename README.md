@@ -1,1 +1,0 @@
-Neste repositório salvarei todos os projetos que desenvolverei alo longo da minha trajetória Trybe nos meu estudos como desenvoldor Web! Python, javaScript and React come soon.
