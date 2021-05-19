@@ -4,14 +4,18 @@ ang3 = 60;
 
 soma = ang1 + ang2 + ang3;
 
-switch (soma === 180) {
+if (soma === 180) {
 
-    case true:
-    console.log('true');
-    break;
+    console.log('true')
+}
 
-    case false:
-    console.log('false');
+else if(soma > 180) {
 
+    console.log('false')
+}
+
+else {
+
+    console.log('Valor inválido')
 }
     
