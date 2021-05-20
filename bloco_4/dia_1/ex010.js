@@ -1,4 +1,4 @@
-let peça = ;
+let peça = 'PEÃO';
 
 
 if (peça.toLowerCase() === 'peão') {
