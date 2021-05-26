@@ -184,7 +184,7 @@ if(vendas === 1000 && valorDeVenda > 0 && preçoDeCusto > 0){
 
 // exercício 11 - Recebe um salário bruto e calcula o líquido a ser recebido
 
-let salarioBruto = 3000;
+let salarioBruto = 100000;
 let aliquotaASerDescontada;
 let impostoDeRenda;
 let salarioBase;
@@ -210,8 +210,20 @@ if(salarioBruto <= 1556.64 && salarioBruto > 0) {
 
 if(salarioBase <= 1903.98){
     console.log('Isento de imposto de renda');
-} else if(salarioBase > 1903.99 && salarioBase < 2826.65) {
-    impostoDeRenda = salarioBase*0.15% - 142.80;
+} else if(salarioBase > 1903.99 && salarioBase <= 2826.65) {
+    impostoDeRenda = salarioBase*0.075% - 142.80;
+    salarioLiquido = salarioBase - impostoDeRenda;
+    console.log(salarioLiquido);
+} else if(salarioBase > 2826.65 && salarioBase <= 3751.05) {
+    impostoDeRenda = salarioBase*0.15% - 354.80;
+    salarioLiquido = salarioBase - impostoDeRenda;
+    console.log(salarioLiquido);
+} else if(salarioBase > 3751.05 && salarioBase <= 4664.68) {
+    impostoDeRenda = salarioBase*0.225% - 636.13;
+    salarioLiquido = salarioBase - impostoDeRenda;
+    console.log(salarioLiquido);
+} else if(salarioBase > 4664.68) {
+    impostoDeRenda = salarioBase*0.275% - 869.36;
     salarioLiquido = salarioBase - impostoDeRenda;
     console.log(salarioLiquido);
 }
