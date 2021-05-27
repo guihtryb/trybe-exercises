@@ -2,9 +2,9 @@
 <html>
   <body>
     <h2 id="page-title">Título</h2>
-    <p id="paragraph">Dê uma cor para este parágrafo!</p>
+    <p id="paragraph" class="paragraph-style">Dê uma cor para este parágrafo!</p>
     <h4 id="subtitle">Subtítulo</h4>
-    <p id="second-paragraph">Segundo parágrafo!</p>
+    <p id="second-paragraph" class="paragraph-style">Segundo parágrafo!</p>
 
     <script>
       const paragraph = document.getElementById("paragraph");
@@ -13,6 +13,11 @@
       document.getElementById("page-title").innerText = "Era do Gelo";
       document.getElementById("second-paragraph").innerText = "Sid é o melhor personagem.";
       document.getElementById("subtitle").innerText = "Se concorda respire: "
+    
+      document.getElementsByClassName("paragraph-style")[0].style.color = "green";
+      document.getElementsByTagName("h4")[0].style.color = "orange";
+    
+    
     </script>
   </body>
 </html>
