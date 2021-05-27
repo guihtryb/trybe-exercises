@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph" class="paragraph-style">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph" class="paragraph-style">Segundo parágrafo!</p>
+
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      document.querySelector("#page-title").innerText = "Invencible";
+      document.querySelectorAll("#second-paragraph")[0].innerText = "Believe in your way.";
+      document.getElementById("subtitle").innerText = "Se concorda respire: "
+    
+      document.querySelectorAll(".paragraph-style")[0].style.color = "deeppink";
+      document.getElementsByTagName("h4")[0].style.color = "orange";
+    
+    
+    </script>
+  </body>
+</html>
