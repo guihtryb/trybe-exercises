@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    //1
+    let body = document.querySelector('body');
+    let h1 = document.createElement("h1");
+    body.appendChild(h1);
+    h1.innerText = "Exercício 5.2 - JavaScript DOM";
+    //2
+    let div1 = document.createElement("div");
+    body.appendChild(div1);
+    div1.className = "main-content";
+    //3
+    let div2 = document.createElement("div");
+    div1.appendChild(div2);
+    div2.className = "center-content";
+    //4
+    let p = document.createElement("p");
+    div2.appendChild(p);
+    p.innerText = "Martha My Dear";
+    //5
+    let div3 = document.createElement("div");
+    div1.appendChild(div3);
+    div3.className = "left-content";
+    //6
+    let div4 = document.createElement("div");
+    div1.appendChild(div4);
+    div4.className = "right-content";
+    //7
+    let imagem = document.createElement("img");
+    imagem.src = "https://picsum.photos/200";
+    imagem.className = "small-image";
+    div3.appendChild(imagem);
+    //8
+    let unOrderList = document.createElement("ul");
+    body.appendChild(unOrderList);
+    let list = ["1", "2", "3", "4", "5", "6", "7", "8", "9"
+    , "10"];
+    for(let i = 0; i < list.length; i += 1) {
+      let itens = list[i];
+
+      let unOrderListIten = document.createElement("li");
+      unOrderListIten.className = 'list-itens';
+      unOrderListIten.innerText = itens;
+      unOrderList.appendChild(unOrderListIten);
+    }
+    div4.appendChild(unOrderList);
+
+    // 9
+    let firstH3 = document.createElement("h3");
+    let secondH3 = document.createElement("h3");
+    let thirdH3 = document.createElement("h3");
+
+    div1.appendChild(firstH3);
+    div1.appendChild(secondH3);
+    div1.appendChild(thirdH3);
+    firstH3.innerText = "Subtítulo";
+    secondH3.innerText = "Subtítulo";
+    thirdH3.innerText = "Subtítulo";
+
+    // Parte 2
+
+    //1 - adicionar .title para o h1
+    h1.className = "title";
+
+    //2 - adicionar .description para tags h3;
+    firstH3.className = "description";
+    secondH3.className = "description";
+    thirdH3.className = "description";
+
+    //3 - Remover div3 utilizando removeChild()
+    div1.removeChild(div3);
+    
+    //4 - Centralizar div4
+    div4.style.marginRight = "auto";
+    
+    //5 - Trocar cor de div2
+    div2.style.backgroundColor = "green";
+
+    //6 - Remover elementos 9 e 10 da lista
+    let unOrderListItens = document.querySelectorAll(".list-itens");
+
+    for(let removeI = 0; removeI < unOrderListItens.length; removeI += 1) {
+      let element = unOrderListItens[removeI];
+
+      if(element.innerText.includes('9') || element.innerText.includes('10')) {
+        unOrderList.removeChild(element);
+      }
+    }
+
+    //extra
+    p.style.textAlign = "center";
+
+    </script>
+  </body>
+</html>
