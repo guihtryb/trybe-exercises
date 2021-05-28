@@ -102,20 +102,26 @@
     div4.appendChild(unOrderList);
 
     // 9
-    let tagGenerate = [1, 2, 3];
-    for(let count = 0; count < tagGenerate.length; count +=1){
+    let firstH3 = document.createElement("h3");
+    let secondH3 = document.createElement("h3");
+    let thirdH3 = document.createElement("h3");
 
-      let tags = document.createElement("h3");
-      div1.appendChild(tags);
+    div1.appendChild(firstH3);
+    div1.appendChild(secondH3);
+    div1.appendChild(thirdH3);
+    firstH3.innerText = "Subtítulo";
+    secondH3.innerText = "Subtítulo";
+    thirdH3.innerText = "Subtítulo";
 
-      tags.innerText = "Subtítulo";
-    }
-    
     // Parte 2
 
     //1 - adicionar .title para o h1
-    
     h1.className = "title";
+
+    //2 - adicionar .description para tags h3;
+    firstH3.className = "description";
+    secondH3.className = "description";
+    thirdH3.className = "description";
 
     </script>
   </body>
