@@ -95,9 +95,10 @@
     for(let i = 0; i < list.length; i += 1) {
       let itens = list[i];
 
-      let unOrderListItens = document.createElement("li");
-      unOrderListItens.innerText = itens;
-      unOrderList.appendChild(unOrderListItens);
+      let unOrderListIten = document.createElement("li");
+      unOrderListIten.className = 'list-itens';
+      unOrderListIten.innerText = itens;
+      unOrderList.appendChild(unOrderListIten);
     }
     div4.appendChild(unOrderList);
 
@@ -131,7 +132,18 @@
     
     //5 - Trocar cor de div2
     div2.style.backgroundColor = "green";
-    
+
+    //6 - Remover elementos 9 e 10 da lista
+    let unOrderListItens = document.querySelectorAll(".list-itens");
+
+    for(let removeI = 0; removeI < unOrderListItens.length; removeI += 1) {
+      let element = unOrderListItens[removeI];
+
+      if(element.innerText.includes('9') || element.innerText.includes('10')) {
+        unOrderList.removeChild(element);
+      }
+    }
+
     </script>
   </body>
 </html>
