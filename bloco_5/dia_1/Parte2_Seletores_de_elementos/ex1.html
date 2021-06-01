@@ -7,17 +7,17 @@
     <p id="second-paragraph" class="paragraph-style">Segundo parágrafo!</p>
 
     <script>
-      const paragraph = document.getElementById("paragraph");
-      paragraph.style.color = "red";
+      document.getElementById("page-title").innerText = "Jack Reacher";
+      document.getElementById("second-paragraph").innerText = "Se eu quiser falar com você, eu te acho.";
+      document.getElementById("subtitle").innerText = "Ninja";
 
-      document.getElementById("page-title").innerText = "Era do Gelo";
-      document.getElementById("second-paragraph").innerText = "Sid é o melhor personagem.";
-      document.getElementById("subtitle").innerText = "Se concorda respire: "
-    
-      document.getElementsByClassName("paragraph-style")[0].style.color = "green";
-      document.getElementsByTagName("h4")[0].style.color = "orange";
-    
-    
+      let paragraph = document.getElementsByClassName("paragraph-style");
+      paragraph[0].style.color = "green";
+      paragraph[1].style.color = "yellow";
+
+      let h4 = document.getElementsByTagName("h4")[0].style.color = "deeppink";
+
+      
     </script>
   </body>
 </html>
