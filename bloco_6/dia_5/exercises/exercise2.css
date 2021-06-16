@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* Small */
+@media screen and (max-width: 500px) {
+    body {
+        margin: 20px;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 21px;
+        margin: 20px 0;
+        width: 108%;
+        text-align: center;
+    }
+    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header p {
+        text-align: center;
+        margin: 35px 0;
+        width: 110%; 
+    }
+
+    aside {
+        margin: 40px 0;
+    }
+}
