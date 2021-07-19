@@ -7,31 +7,57 @@ const {
 
 
 
+// describe("Retrieving users from cache", () => {
+//     describe("When the user exists", () => {
+//         it('should return "Mark" when passed number 4 as param', () => {
+//             expect.assertions(1);
+            
+//             return getUserName(4).then((user) =>
+//             expect(user).toEqual('Mark'));
+//           });
+//           it('should return "Paul" when passed number 5 as param', () => {
+//               expect.assertions(1);
+        
+//               return getUserName(5).then((user) =>
+//               expect(user).toEqual("Paul"));
+//           });
+//     })
+//     describe("When the user don't exists", () => {
+//         it("shouldn't return an error messagen when passed number 6 as param", () => {
+//             expect.assertions(1);
+      
+//             return getUserName(6).catch((error) => {
+//                 expect(error).toEqual({error: 'User with 6 not found.'})
+//             });
+//     })
+//   });
+// });
+
+// Usando async e await
+
 describe("Retrieving users from cache", () => {
     describe("When the user exists", () => {
-        it('should return "Mark" when passed number 4 as param', () => {
+        it('should return "Mark" when passed number 4 as param', async () => {
             expect.assertions(1);
             
-            return getUserName(4).then((user) =>
-            expect(user).toEqual('Mark'));
-          });
-          it('should return "Paul" when passed number 5 as param', () => {
-              expect.assertions(1);
-        
-              return getUserName(5).then((user) =>
-              expect(user).toEqual("Paul"));
+            const userName = await getUserName(4);
+            expect(userName).toEqual('Mark');
+        });
+        it('should return "Paul" when passed number 5 as param', async () => {
+            expect.assertions(1);
+            
+            const userName = await getUserName(5)
+            expect(userName).toEqual("Paul");
           });
     })
     describe("When the user don't exists", () => {
-        it("shouldn't return an error messagen when passed number 6 as param", () => {
+        it("should return an error messagen when passed number 6 as param", async() => {
             expect.assertions(1);
-      
-            return getUserName(6).catch((error) => {
-                expect(error).toEqual({error: 'User with 6 not found.'})
-            });
-    })
+            try {
+              await getUserName(6);
+            } catch(error) {
+              expect(error).toEqual({ error: 'User with 6 not found.' })
+            }
+    });
   });
 });
-
-
-
