@@ -3,7 +3,7 @@ import Task from './task';
 
 function App() {
   return (
-    <div className="App">
+    <div>
      <Task/>
     </div>
   );
