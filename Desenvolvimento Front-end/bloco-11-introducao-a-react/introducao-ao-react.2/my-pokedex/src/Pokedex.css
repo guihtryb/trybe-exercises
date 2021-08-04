@@ -1,0 +1,7 @@
+.pokedex {
+  background-color: #303030;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}

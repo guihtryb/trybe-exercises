@@ -1,0 +1,5 @@
+Speed
+Jump
+Hide
+Fight
+Fly
