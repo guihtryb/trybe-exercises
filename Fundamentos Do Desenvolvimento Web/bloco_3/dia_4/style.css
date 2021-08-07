@@ -1,0 +1,17 @@
+aside {
+  display: block;
+  width: fit-content;
+  position: relative;
+  left: 600px;
+  bottom: 80px;
+}
+
+img {
+  height: 200px;
+  width: 295px;
+}
+
+p {
+  display: block;
+  max-width: 450px;
+}
