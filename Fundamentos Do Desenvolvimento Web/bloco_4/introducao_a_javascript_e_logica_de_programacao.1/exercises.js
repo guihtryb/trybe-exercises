@@ -20,3 +20,19 @@ if (value1 > value2 ) {
 } else {
   console.log(`${value1} is equal to ${value2}`);
 }
+
+// 3. Return the biggest of three nums
+
+const value1 = 10;
+const value2 = 20;
+const value3 = 100;
+
+if (value1 > value2 && value1 > value3 ) {
+  console.log(`${value1} is bigger than ${value2} and bigger than ${value3}`);
+} else if(value2 > value3) {
+  console.log(`${value2} is bigger than ${value1} and bigger than ${value3}`);
+} else if( value3 > value2) {
+  console.log(`${value3} is bigger than ${value1} and bigger than ${value2}`);
+} else {
+  console.log(`${value1} = ${value2} = ${value3}`);
+}
