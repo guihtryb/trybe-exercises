@@ -10,7 +10,7 @@ console.log(`Modulus of ${a} with ${b} is equal to: ${a % b}`);
 
 // 2. Return biggest of two nums
 
-const value1 = 93;
+const value1 = 95;
 const value2 = 77;
 
 if (value1 > value2 ) {
