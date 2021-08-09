@@ -85,3 +85,10 @@ const c = 27;
 if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) console.log(true);
 else console.log(false);
 
+// 9. Returns true if at lesast one value is odd or false otherwise
+const a = 10;
+const b = 60;
+const c = 2;
+
+if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0) console.log(true);
+else console.log(false);
