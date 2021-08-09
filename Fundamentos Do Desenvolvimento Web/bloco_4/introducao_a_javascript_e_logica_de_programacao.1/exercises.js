@@ -36,3 +36,9 @@ if (value1 > value2 && value1 > value3 ) {
 } else {
   console.log(`${value1} = ${value2} = ${value3}`);
 }
+
+// 4. Return 'positive' if the value is positive, 'negative' if negative and 'zero' otherwise
+const num = 1000;
+if (num > 0) console.log('positive');
+else if (num < 0) console.log('negative');
+else console.log('zero');
