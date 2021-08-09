@@ -55,3 +55,15 @@ if (ab < 0 || ac < 0 || bc < 0) {
 } else {
   console.log(false);
 }
+
+// 6. Receive the name of a chess piece and return it's movement
+const piece = 'Knight'
+
+if (piece.toLowerCase() === 'pawn' ) console.log('Two squares to front if is the first movement, or just one square to front otherwise. Attack in one square on the diagonal');
+if (piece.toLowerCase() === 'king' ) console.log('One square to any direction');
+if (piece.toLowerCase() === 'queen' ) console.log('Until the end of the table in the horizontals, verticals and diagonals');
+if (piece.toLowerCase() === 'rook' ) console.log('Until the end of the table in the horizontals and verticals');
+if (piece.toLowerCase() === 'bishop' ) console.log('Until the end in the diagonals');
+if (piece.toLowerCase() === 'knight' ) console.log('Moves in "L", two squares to one direction and one in the other direction');
+else console.log('Ivalid piece');
+
