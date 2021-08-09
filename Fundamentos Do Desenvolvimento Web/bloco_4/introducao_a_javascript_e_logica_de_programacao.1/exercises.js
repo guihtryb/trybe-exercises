@@ -96,6 +96,117 @@ else console.log(false);
 // 10. Calculates the profit sold thousand units of a product
 const sellPrice = 105.5;
 const buyPrice = 63;
-const profit = (sellPrice * 1000) -  (buyPrice * 1000);
+let tax = 0.2;
 
-console.log(`Profit of R$${(profit).toFixed(2)}`);
+if (sellPrice < 0 || buyPrice < 0 ) console.log("Values must be positive");
+else {
+  const buyTotalPrice = buyPrice * (tax + 1);
+  const profit = sellPrice * 1000 - buyTotalPrice * 1000;
+  console.log(`The profit is equal to: R$${profit.toFixed(2)}`);
+}
+
+// 11. Given a gross salary, calculates net salary
+
+const grossSalary = 3000;
+let netSalary = 0;
+let aliquot = 0;
+let incomeTax = 0;
+
+if (grossSalary <  1556.94) {
+  aliquot = 0.08;
+  netSalary = grossSalary * (1 - aliquot);
+} else if (grossSalary > 1556.94 && grossSalary < 2594.92) {
+  aliquot = 0.09;
+  netSalary = grossSalary * (1 - aliquot);
+  if (netSalary > 1903.98 && netSalary < 2826.65) {
+    aliquot = 0.075;
+    let fixedTax = 142.8;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 2826.66 && netSalary < 3751.05) {
+    aliquot = 0.15;
+    let fixedTax = 354.8;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 3751.05 && netSalary < 4664.68) {
+    aliquot = 0.225;
+    let fixedTax = 636.13;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 4664.68 ) {
+    aliquot = 27.5;
+    let fixedTax = 869.36;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+} else if (grossSalary > 2594.92 && grossSalary < 5189.82) {
+  aliquot = 0.11;
+  netSalary = grossSalary * (1 - aliquot);
+  if (netSalary > 1903.98 && netSalary < 2826.65) {
+    aliquot = 0.075;
+    let fixedTax = 142.8;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 2826.66 && netSalary < 3751.05) {
+    aliquot = 0.15;
+    let fixedTax = 354.8;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 3751.05 && netSalary < 4664.68) {
+    aliquot = 0.225;
+    let fixedTax = 636.13;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 4664.68 ) {
+    aliquot = 27.5;
+    let fixedTax = 869.36;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+} else if (grossSalary > 5189.82) {
+  aliquot = 570.88;
+  netSalary = grossSalary - aliquot;
+  console.log(netSalary);
+  if (netSalary > 1903.98 && netSalary < 2826.65) {
+    aliquot = 0.075;
+    let fixedTax = 142.8;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 2826.66 && netSalary < 3751.05) {
+    aliquot = 0.15;
+    let fixedTax = 354.8;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 3751.05 && netSalary < 4664.68) {
+    aliquot = 0.225;
+    let fixedTax = 636.13;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+  if (netSalary > 4664.68 ) {
+    aliquot = 0.275;
+    let fixedTax = 869.36;
+    let incomeTax = netSalary * aliquot - fixedTax;
+    netSalary = netSalary - incomeTax;
+    console.log(`Your net salary is equal to: R$${netSalary}`);
+  }
+} 
