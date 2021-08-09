@@ -92,3 +92,10 @@ const c = 2;
 
 if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0) console.log(true);
 else console.log(false);
+
+// 10. Calculates the profit sold thousand units of a product
+const sellPrice = 105.5;
+const buyPrice = 63;
+const profit = (sellPrice * 1000) -  (buyPrice * 1000);
+
+console.log(`Profit of R$${(profit).toFixed(2)}`);
