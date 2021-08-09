@@ -110,7 +110,8 @@ else {
 const grossSalary = 3000;
 let netSalary = 0;
 let aliquot = 0;
-let incomeTax = 0;
+
+// Reduzir condições, pois ja existe o ELSE em if's
 
 if (grossSalary <  1556.94) {
   aliquot = 0.08;
