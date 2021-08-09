@@ -67,3 +67,13 @@ if (piece.toLowerCase() === 'bishop' ) console.log('Until the end in the diagona
 if (piece.toLowerCase() === 'knight' ) console.log('Moves in "L", two squares to one direction and one in the other direction');
 else console.log('Ivalid piece');
 
+// 7. Convert grades given in percentage to 'A' , 'B' ... 'F'
+const grade = 100;
+if (grade > 100 || grade < 0) console.log('Grades must be among 0 and 100');
+else if (grade >= 90) console.log('A');
+else if (grade >= 80) console.log('B');
+else if (grade >= 70) console.log('C');
+else if (grade >= 60) console.log('D');
+else if (grade >= 50) console.log('E');
+else if (grade < 50) console.log('F');
+
