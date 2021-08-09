@@ -77,3 +77,11 @@ else if (grade >= 60) console.log('D');
 else if (grade >= 50) console.log('E');
 else if (grade < 50) console.log('F');
 
+// 8. Returns true if at least one value is even and false otherwise
+const a = 104;
+const b = 63;
+const c = 27;
+
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) console.log(true);
+else console.log(false);
+
