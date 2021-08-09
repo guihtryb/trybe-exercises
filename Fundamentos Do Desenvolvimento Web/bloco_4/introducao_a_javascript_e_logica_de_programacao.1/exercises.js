@@ -42,3 +42,16 @@ const num = 1000;
 if (num > 0) console.log('positive');
 else if (num < 0) console.log('negative');
 else console.log('zero');
+
+// 5. Return true if the angles correspond to a triangle or false otherwise
+const ab = -30;
+const ac = 60;
+const bc = 100;
+
+if (ab < 0 || ac < 0 || bc < 0) {
+  console.log('Values must be positive');
+} else if (ab + ac + bc === 180) {
+  console.log(true);
+} else {
+  console.log(false);
+}
