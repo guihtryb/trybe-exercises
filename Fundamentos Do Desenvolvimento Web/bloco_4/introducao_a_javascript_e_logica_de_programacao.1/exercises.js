@@ -116,7 +116,7 @@ let aliquot = 0;
 if (grossSalary <  1556.94) {
   aliquot = 0.08;
   netSalary = grossSalary * (1 - aliquot);
-} else if (grossSalary > 1556.94 && grossSalary < 2594.92) {
+} else if (grossSalary < 2594.92) {
   aliquot = 0.09;
   netSalary = grossSalary * (1 - aliquot);
   if (netSalary > 1903.98 && netSalary < 2826.65) {
@@ -147,7 +147,7 @@ if (grossSalary <  1556.94) {
     netSalary = netSalary - incomeTax;
     console.log(`Your net salary is equal to: R$${netSalary}`);
   }
-} else if (grossSalary > 2594.92 && grossSalary < 5189.82) {
+} else if (grossSalary < 5189.82) {
   aliquot = 0.11;
   netSalary = grossSalary * (1 - aliquot);
   if (netSalary > 1903.98 && netSalary < 2826.65) {
