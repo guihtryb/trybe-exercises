@@ -108,105 +108,36 @@ else {
 // 11. Given a gross salary, calculates net salary
 
 const grossSalary = 3000;
-let netSalary = 0;
-let aliquot = 0;
-let incomeTax = 0;
 
-if (grossSalary <  1556.94) {
-  aliquot = 0.08;
-  netSalary = grossSalary * (1 - aliquot);
-} else if (grossSalary > 1556.94 && grossSalary < 2594.92) {
-  aliquot = 0.09;
-  netSalary = grossSalary * (1 - aliquot);
-  if (netSalary > 1903.98 && netSalary < 2826.65) {
-    aliquot = 0.075;
-    let fixedTax = 142.8;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 2826.66 && netSalary < 3751.05) {
-    aliquot = 0.15;
-    let fixedTax = 354.8;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 3751.05 && netSalary < 4664.68) {
-    aliquot = 0.225;
-    let fixedTax = 636.13;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 4664.68 ) {
-    aliquot = 27.5;
-    let fixedTax = 869.36;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-} else if (grossSalary > 2594.92 && grossSalary < 5189.82) {
-  aliquot = 0.11;
-  netSalary = grossSalary * (1 - aliquot);
-  if (netSalary > 1903.98 && netSalary < 2826.65) {
-    aliquot = 0.075;
-    let fixedTax = 142.8;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 2826.66 && netSalary < 3751.05) {
-    aliquot = 0.15;
-    let fixedTax = 354.8;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 3751.05 && netSalary < 4664.68) {
-    aliquot = 0.225;
-    let fixedTax = 636.13;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 4664.68 ) {
-    aliquot = 27.5;
-    let fixedTax = 869.36;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-} else if (grossSalary > 5189.82) {
-  aliquot = 570.88;
-  netSalary = grossSalary - aliquot;
-  console.log(netSalary);
-  if (netSalary > 1903.98 && netSalary < 2826.65) {
-    aliquot = 0.075;
-    let fixedTax = 142.8;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 2826.66 && netSalary < 3751.05) {
-    aliquot = 0.15;
-    let fixedTax = 354.8;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 3751.05 && netSalary < 4664.68) {
-    aliquot = 0.225;
-    let fixedTax = 636.13;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-  if (netSalary > 4664.68 ) {
-    aliquot = 0.275;
-    let fixedTax = 869.36;
-    let incomeTax = netSalary * aliquot - fixedTax;
-    netSalary = netSalary - incomeTax;
-    console.log(`Your net salary is equal to: R$${netSalary}`);
-  }
-} 
+// let netSalary;
+let incomeTax;
+let aliquotINSS;
+
+// let baseSalary;
+
+// Reduzir logs e variáveis, achar Income e inss taxs then calculate base and net salary
+if (grossSalary <=  1556.94) {
+  aliquotINSS = grossSalary * 0.08;
+} else if (grossSalary <= 2594.92) {
+  aliquotINSS = grossSalary * 0.09;
+} else if (grossSalary <= 5189.82) {
+  aliquotINSS = grossSalary * 0.11;
+} else {
+  aliquotINSS = 570.88;
+}
+
+let baseSalary = grossSalary - aliquotINSS;
+
+if (baseSalary <= 1903.98) {
+  incomeTax = 0;
+} else if(baseSalary <= 2826.65) {
+  incomeTax = baseSalary * 0.075 - 142.8
+} else if( baseSalary <= 3751.05) {
+  incomeTax = baseSalary * 0.15 - 354.8;
+} else if (baseSalary <= 4664.68) {
+  incomeTax = baseSalary * 0.025 - 636.13;
+} else {
+  incomeTax = baseSalary * 0.275 - 869.36;
+}
+let netSalary = baseSalary - incomeTax;
+console.log(`Your net salary is equal to: R$${netSalary}`);
