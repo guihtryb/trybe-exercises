@@ -93,3 +93,11 @@ for (let index = 0; index <= arrayLength; index += 1) {
 }
 
 console.log(newArray);
+
+// Exercise 9 - Using the array created above, log the result of each value divided by 2 
+for (let index = 0; index < newArray.length; index++) {
+  const num = newArray[index];
+  if (num !== 0) {
+  console.log(`${num}/2: ${num / 2}`);
+  }
+}
