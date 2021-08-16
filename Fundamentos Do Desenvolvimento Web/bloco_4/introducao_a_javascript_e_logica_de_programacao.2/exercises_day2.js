@@ -70,3 +70,15 @@ if (quantyOfOddNums === 0) {
 } else {
   console.log(`quantyOfOddNums: ${quantyOfOddNums}`);
 }
+
+// Exercise 7 - Find the lower value of the array and log it
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let lowerNum = numbers[0];
+
+for (let index = 0; index < numbers.length; index++) {
+  if (lowerNum > numbers[index]) {
+    lowerNum = numbers[index]
+  }
+}
+
+console.log(lowerNum);
