@@ -20,19 +20,21 @@ let sum = 0;
 for (let index = 0; index < numbers.length; index += 1) {
   sum += numbers[index]
 }
+
 let average = sum / numbers.length;
+
 console.log(average);
 
 /* Exercise 4 - with the same code above,
 case the result be higher than 20, log "Value higher than 20", else log "Value lower or equal 20"*/
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let sum = 0;
+let average = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-  sum += numbers[index]
+  average += numbers[index]
 }
 
-let average = sum / numbers.length;
+  average = average / numbers.length;
 
 if (average > 20) {
   console.log(`Value higher than 20`);
@@ -42,7 +44,7 @@ if (average > 20) {
 
 // Exercise 5 - Discover the higher value of the array using for 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let higherNum = 0;
+let higherNum = numbers[0];
 
 for (let index = 0; index < numbers.length; index += 1) {
   
