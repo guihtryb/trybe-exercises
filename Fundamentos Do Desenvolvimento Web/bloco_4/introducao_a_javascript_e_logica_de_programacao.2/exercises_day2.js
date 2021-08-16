@@ -75,10 +75,21 @@ if (quantyOfOddNums === 0) {
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let lowerNum = numbers[0];
 
-for (let index = 0; index < numbers.length; index++) {
+for (let index = 0; index < numbers.length; index += 1) {
   if (lowerNum > numbers[index]) {
     lowerNum = numbers[index]
   }
 }
 
 console.log(lowerNum);
+
+// Exercise 8 - Using for, create an array ranging from 1 to 25 and log the final result 
+let newArray = [];
+let arrayLength = 25;
+
+for (let index = 0; index <= arrayLength; index += 1) {
+  const newNum = index;
+  newArray.push(newNum);
+}
+
+console.log(newArray);
