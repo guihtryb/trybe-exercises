@@ -52,3 +52,21 @@ for (let index = 0; index < numbers.length; index += 1) {
 }
 
 console.log(higherNum);
+
+// Exercise 6 - Discover how many odd numbers exist in the array and log the result. Case there isn't any odd number, log 'No odd values founded'
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let quantyOfOddNums = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+  let number = numbers[index];
+  
+  if (number % 2 !== 0) {
+    quantyOfOddNums += 1;
+  }
+}
+
+if (quantyOfOddNums === 0) {
+  console.log('No odd values founded!');
+} else {
+  console.log(`quantyOfOddNums: ${quantyOfOddNums}`);
+}
