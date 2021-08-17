@@ -10,3 +10,12 @@ for (let index = 0; index < n; index += 1) {
 for (let index = 0; index < columns; index += 1) {
   console.log(`Row ${index + 1}: ${row}`);  
 }
+
+// Exercise 2 - Log a triangle of asterisks with base size n
+
+const n = 5;
+let row = '';
+
+for (let index = 0; index < n; index += 1) {
+  console.log(row += '*');
+}
