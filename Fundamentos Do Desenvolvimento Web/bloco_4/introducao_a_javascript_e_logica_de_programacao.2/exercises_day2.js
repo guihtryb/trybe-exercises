@@ -117,3 +117,17 @@ for (let aheadIndex = 1; aheadIndex < numbers.length; aheadIndex += 1) {
   }
 }
 console.log(numbers);
+
+// Exercise bonus 2 - Sort the array numbers in decreasing order
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (let aheadIndex = 1; aheadIndex < numbers.length; aheadIndex += 1) {
+  for (let currIndex = 0; currIndex < numbers.length; currIndex += 1) {
+    if (numbers[aheadIndex] > numbers[currIndex]) {
+    let position = numbers[currIndex];
+    numbers[currIndex] = numbers[aheadIndex];
+    numbers[aheadIndex] = position;
+    }
+  }
+}
+console.log(numbers);
