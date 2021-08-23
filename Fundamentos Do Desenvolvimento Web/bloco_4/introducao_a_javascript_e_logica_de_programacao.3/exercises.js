@@ -41,5 +41,26 @@ for (let rowIndex = 0; rowIndex < n; rowIndex += 1) {
   row = ''
 }
 
+// Exercise 4 - Log a pyramid with base n
+const n = 6;
+let row = '';
+let divisor = (n + 1) / 2;
 
+let constructorLeft = divisor;
+let constructorRight = divisor;
 
+let asterisk = '*';
+
+for (let rowIndex = 0; rowIndex <= divisor; rowIndex += 1) {
+  for (let columnIndex = 0; columnIndex <= n; columnIndex += 1) {
+    if ( columnIndex > constructorLeft && columnIndex < constructorRight ) {
+      row += asterisk;
+    } else {
+      row += ' ';
+    }
+  }
+  console.log(row);
+  row = '';
+  constructorLeft -= 1;
+  constructorRight += 1;
+};
