@@ -64,3 +64,35 @@ for (let rowIndex = 0; rowIndex <= divisor; rowIndex += 1) {
   constructorLeft -= 1;
   constructorRight += 1;
 };
+
+// Exercise 5 bônus - Log a pyramid with base n that is void inside
+
+// Create n rows e n columns
+// if column position is equal === constructor or if rowIndex is equal divisor*, add asterisk
+// Log each line
+// Turn row to the initial value
+// ConstructorLeft minus 1
+// ConstructorRight plus 1 
+
+const n = 7;
+let row = '';
+let divisor = (n + 1) / 2;
+
+let constructorLeft = divisor;
+let constructorRight = divisor;
+
+let asterisk = '*';
+
+for (let rowIndex = 1; rowIndex <= divisor; rowIndex += 1) {
+  for (let columnIndex = 1; columnIndex <= n; columnIndex += 1) {
+    if (columnIndex !== constructorLeft && columnIndex !== constructorRight && rowIndex !== divisor ) {
+      row += ' ';
+    } else {
+      row += asterisk;
+    }
+  }
+  console.log(row);
+  row = '';
+  constructorLeft -= 1;
+  constructorRight += 1;
+}
