@@ -131,3 +131,20 @@ for (let aheadIndex = 1; aheadIndex < numbers.length; aheadIndex += 1) {
   }
 }
 console.log(numbers);
+
+// Exercise bonus 3 - Create a new Array from numbers without lose it, where each new
+// value is equal the correspondent value in numbers multiplied for the next
+
+const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+const newArray = [];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (index + 1 < numbers.length) {
+    newArray.push(numbers[index] * numbers[index + 1]);
+  }
+  else {
+    newArray.push(numbers[index] * 2);
+  }
+}
+
+console.log(newArray);
