@@ -19,3 +19,27 @@ let row = '';
 for (let index = 0; index < n; index += 1) {
   console.log(row += '*');
 }
+
+// Exercise 3 - Log a triangle of astersks but now inverted
+
+const n = 5;
+let row = '';
+let constructor = n - 1;
+let asterisk = '*'
+
+for (let rowIndex = 0; rowIndex < n; rowIndex += 1) {
+  for (let columns = 0; columns < n; columns += 1) {
+    if (columns < constructor) {
+      row += ' ';
+    }
+    else {
+      row += asterisk;
+    }
+  }
+  constructor -= 1;
+  console.log(row);
+  row = ''
+}
+
+
+
