@@ -96,3 +96,46 @@ for (let rowIndex = 1; rowIndex <= divisor; rowIndex += 1) {
   constructorLeft -= 1;
   constructorRight += 1;
 }
+
+// Exercise 6 bônus - Do a program that answers if a defined number is prime or no. 
+
+// A prime number is divided only for one and for himself
+// Armazenar um número em uma variavel
+// Definir uma boolean 'isPrime' que será setada para false caso o número não seja primo 
+// fazer um laço for com index de 2 a 9
+// laço deve ocorrer apenas se o numero for diferente de 0
+// Se o index for DIFERENTE do numero e a divisao entre o numero e o index tiver resto igual a 0, significa que o numero numero não é primo, caso o contrário, é primo.
+// Se não for primo, isPrime = false.
+// Se for primo, isPrime = true.
+// logar  resultado de isPrime
+
+const numberToVerifie = 16;
+let isPrime = true;
+
+for (let index = 2; index < 9; index += 1) {
+  if (index !== numberToVerifie  && numberToVerifie % index === 0) {
+    isPrime = false;
+  } 
+}
+
+if(isPrime) console.log(`${numberToVerifie} is prime`);
+else console.log(`${numberToVerifie} is not prime`);
+
+// Ou
+
+// Constante com valor a ser verificado
+// Variável com o numero de divisores = 2
+// Criar um laço de 2 a 9
+// Se o numero é divisivel pelo valor do index, e o index é diferente do numero n de divisores += 1
+// Se valor de divisores > 2, logar número é primo
+// Caso contrário, logar número não é primo
+
+const numberToCheck = 48;
+let numOfDivisors = 2;
+
+for (let index = 2; index < 9; index += 1) {
+  if (numberToCheck !== index && numberToCheck % index === 0) numOfDivisors += 1;
+}
+
+if (numOfDivisors > 2) console.log('Number is not prime');
+else console.log('Number is prime');
