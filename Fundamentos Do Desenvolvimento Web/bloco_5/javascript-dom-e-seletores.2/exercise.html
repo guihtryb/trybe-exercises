@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const body = document.getElementsByTagName('body')[0];
+      const titleText = 'Exercício 5.2 - JavaScript DOM'
+      const title = document.createElement('h1');
+      const main = document.createElement('main');
+      const centerSection = document.createElement('section');
+      const centerSectionParagraph = document.createElement('p');
+      const leftSection = document.createElement('section');
+      const rightSection = document.createElement('section');
+      const img = document.createElement('img');
+      const list = document.createElement('ul');
+
+      function addTitleToBody() {
+        title.innerText = titleText;
+        body.appendChild(title);
+      }
+      addTitleToBody();
+
+      function addMainToBody() {
+        main.className = 'main-content';
+        body.appendChild(main);
+      }
+      addMainToBody();
+
+      function addSectionToMain() {
+        centerSection.className = 'center-content';
+        leftSection.className = 'left-content';
+        rightSection.className = 'right-content';
+        main.appendChild(centerSection);
+        main.appendChild(leftSection);
+        main.appendChild(rightSection);
+      }
+      addSectionToMain();
+
+      function addElementsToSection() {
+        centerSectionParagraph.innerText = 'I`m a paragraph :)';
+        centerSection.appendChild(centerSectionParagraph);
+        rightSection.appendChild(list);
+      }
+      addElementsToSection();
+
+      function createList() {
+        const oneToTen = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',]
+        for (let number of oneToTen) {
+            const element = document.createElement('li');
+            element.innerText = number;
+            list.appendChild(element);
+          }
+      }
+      createList();
+
+      function addSubtitleToMain() {
+        for (let index = 0; index < 3; index += 1) {
+          const subtitle = document.createElement('h3');
+          subtitle.innerText = 'I`m a description'
+          subtitle.className = 'description'
+          main.appendChild(subtitle);
+        }
+      }
+      addSubtitleToMain();
+
+      function addImg() {
+        img.src = 'https://picsum.photos/200'
+        img.className = 'small-image';
+        leftSection.appendChild(img);
+      }
+      addImg();
+
+      // Exercise 10
+      title.className = 'title';
+      // Exercise 11
+      // add class description to the h3 tags
+      // Exercise 12
+      // Remove leftSection with .removeChild
+      main.removeChild(leftSection);
+      // Exercise 13
+      rightSection.style.marginRight = 'auto';
+      // Exercise 14
+      centerSection.parentElement.style.backgroundColor = 'green';
+      // Exercise 15
+      // Remove the two last elemenst of the list
+      for (let i = 0; i < 2; i += 1) {
+        list.lastChild.remove();
+      }
+    </script>
+  </body>
+</html>
