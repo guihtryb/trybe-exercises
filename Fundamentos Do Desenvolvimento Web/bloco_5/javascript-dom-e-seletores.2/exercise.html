@@ -65,6 +65,8 @@
       const centerSectionParagraph = document.createElement('p');
       const leftSection = document.createElement('section');
       const rightSection = document.createElement('section');
+      const img = document.createElement('img');
+      const list = document.createElement('ul');
 
       function addTitleToBody() {
         title.innerText = titleText;
@@ -88,13 +90,38 @@
       }
       addSectionToMain();
 
-      function addParagraphToSection() {
-        centerSectionParagraph.innerText = 'I`m the second paragraph :)';
+      function addElementsToSection() {
+        centerSectionParagraph.innerText = 'I`m a paragraph :)';
         centerSection.appendChild(centerSectionParagraph);
+        rightSection.appendChild(list);
       }
-      addParagraphToSection();
+      addElementsToSection();
 
+      function createList() {
+        const oneToTen = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',]
+        for (let number in oneToTen) {
+            const element = document.createElement('li');
+            element.innerText = oneToTen[number];
+            list.appendChild(element);
+          }
+      }
+      createList();
 
+      function addSubtitleToMain() {
+        for (let index = 0; index < 3; index += 1) {
+          const subtitle = document.createElement('h3');
+          subtitle.innerText = 'I`m a h3'
+          main.appendChild(subtitle);
+        }
+      }
+      addSubtitleToMain();
+
+      function addImg() {
+        img.src = 'https://picsum.photos/200'
+        img.className = 'small-image';
+        leftSection.appendChild(img);
+      }
+      addImg();
     </script>
   </body>
 </html>
