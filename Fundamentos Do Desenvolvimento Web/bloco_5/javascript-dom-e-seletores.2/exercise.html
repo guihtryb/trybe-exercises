@@ -110,7 +110,8 @@
       function addSubtitleToMain() {
         for (let index = 0; index < 3; index += 1) {
           const subtitle = document.createElement('h3');
-          subtitle.innerText = 'I`m a h3'
+          subtitle.innerText = 'I`m a description'
+          subtitle.className = 'description'
           main.appendChild(subtitle);
         }
       }
@@ -122,6 +123,14 @@
         leftSection.appendChild(img);
       }
       addImg();
+
+      // Exercise 11 
+      title.className = 'title';
+      // Exercise 12
+      // add class description to the h3 tags
+      // Exercise 13
+      // Remove leftSection with .removeChild
+      main.removeChild(leftSection);
     </script>
   </body>
 </html>
