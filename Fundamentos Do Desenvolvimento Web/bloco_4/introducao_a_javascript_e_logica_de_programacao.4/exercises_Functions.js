@@ -24,9 +24,7 @@ function verifiesPalindrome(string) {
   return true;
 }
 
-// Exercise 2 
-
-const numbers = [2, 3, 6, 7, 10, 1];
+// Exercise 2 - Declare a func that receives an array of int numbers and return the index of the biggest value
 
 function arrayBiggestValueIndex(arrayOfNums) {
   let biggestValueIndex = 0;
@@ -36,28 +34,4 @@ function arrayBiggestValueIndex(arrayOfNums) {
     }
   }
   return biggestValueIndex;
-}
-
-// Exercise 3 
-
-function arrayLowerValueIndex(arrayOfNums) {
-  let lowerValueIndex = 0;
-  for (let index in arrayOfNums) {
-    if (arrayOfNums[index] < arrayOfNums[lowerValueIndex]) {
-      lowerValueIndex = index;
-    }
-  }
-  return lowerValueIndex;
-}
-
-// Exercise 4
-const myArrayOfNames = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
-function biggestName(arrayOfNames) {
-let biggestName = arrayOfNames[0];
-  for (let name in arrayOfNames) {
-    if (arrayOfNames[name].length > biggestName.length) {
-      biggestName = arrayOfNames[name];
-    }
-  }
-  return biggestName;
 }
