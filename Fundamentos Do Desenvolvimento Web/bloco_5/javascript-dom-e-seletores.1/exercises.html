@@ -51,12 +51,13 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
     const secondParagraph = document.getElementsByTagName('p')[1];
+    const myselfTwoYearsAfter = "A man who has studied a lot then resolve problems and generate value is what brings my freedom and happiness";
     const mainContent = document.getElementsByClassName('main-content')[0];
     const centerContent = document.getElementsByClassName('center-content')[0];
     const title = document.getElementsByClassName('title')[0];
 
     function changeSecondParagraphText() {
-      return secondParagraph.innerText = "A man who has studied a lot then resolve problems and generate value is what brings my freedom and happines"
+      return secondParagraph.innerText = myselfTwoYearsAfter;
     }
     changeSecondParagraphText();
 
@@ -74,6 +75,11 @@
       return  title.innerText = 'Exercício 5.1 - JavaScript'
     }
     fixTitleText();
+
+    function secondParagraphToUpperCase() {
+      return secondParagraph.innerText = myselfTwoYearsAfter.toUpperCase()
+    }
+    secondParagraphToUpperCase();
 
     </script>
   </body>
