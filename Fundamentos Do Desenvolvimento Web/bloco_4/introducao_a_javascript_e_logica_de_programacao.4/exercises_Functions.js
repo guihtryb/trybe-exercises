@@ -35,3 +35,15 @@ function arrayBiggestValueIndex(arrayOfNums) {
   }
   return biggestValueIndex;
 }
+
+// Exercise 3 - Declare a func that receives an array of int numbers and return the index of the lower value
+
+function arrayLowerValueIndex(arrayOfNums) {
+  let lowerValueIndex = 0;
+  for (let index in arrayOfNums) {
+    if (arrayOfNums[index] < arrayOfNums[lowerValueIndex]) {
+      lowerValueIndex = index;
+    }
+  }
+  return lowerValueIndex;
+}
