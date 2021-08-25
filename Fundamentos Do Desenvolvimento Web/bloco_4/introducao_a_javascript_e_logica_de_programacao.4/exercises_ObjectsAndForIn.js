@@ -18,3 +18,8 @@ info['recurrent'] = 'Yes';
 
 console.log(info);
 
+// Exercise 3 - Do a for/in that shows all the keys of the 'info' object
+
+for (let key in info) {
+  console.log(key);
+}
