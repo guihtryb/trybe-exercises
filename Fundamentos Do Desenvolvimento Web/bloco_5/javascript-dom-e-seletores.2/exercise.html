@@ -99,9 +99,9 @@
 
       function createList() {
         const oneToTen = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',]
-        for (let number in oneToTen) {
+        for (let number of oneToTen) {
             const element = document.createElement('li');
-            element.innerText = oneToTen[number];
+            element.innerText = number;
             list.appendChild(element);
           }
       }
@@ -124,13 +124,22 @@
       }
       addImg();
 
-      // Exercise 11 
+      // Exercise 10
       title.className = 'title';
-      // Exercise 12
+      // Exercise 11
       // add class description to the h3 tags
-      // Exercise 13
+      // Exercise 12
       // Remove leftSection with .removeChild
       main.removeChild(leftSection);
+      // Exercise 13
+      rightSection.style.marginRight = 'auto';
+      // Exercise 14
+      centerSection.parentElement.style.backgroundColor = 'green';
+      // Exercise 15
+      // Remove the two last elemenst of the list
+      for (let i = 0; i < 2; i += 1) {
+        list.lastChild.remove();
+      }
     </script>
   </body>
 </html>
