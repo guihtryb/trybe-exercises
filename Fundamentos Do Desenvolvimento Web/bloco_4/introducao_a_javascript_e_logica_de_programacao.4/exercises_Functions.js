@@ -47,3 +47,18 @@ function arrayLowerValueIndex(arrayOfNums) {
   }
   return lowerValueIndex;
 }
+
+
+
+// Exercise 4 - Declare a func that receives an array of numbers and return the biggest name
+
+const myArrayOfNames = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+function biggestName(arrayOfNames) {
+let biggestName = arrayOfNames[0];
+  for (let name in arrayOfNames) {
+    if (arrayOfNames[name].length > biggestName.length) {
+      biggestName = arrayOfNames[name];
+    }
+  }
+  return biggestName;
+}
