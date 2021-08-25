@@ -61,6 +61,10 @@
       const titleText = 'Exercício 5.2 - JavaScript DOM'
       const title = document.createElement('h1');
       const main = document.createElement('main');
+      const centerSection = document.createElement('section');
+      const centerSectionParagraph = document.createElement('p');
+      const leftSection = document.createElement('section');
+      const rightSection = document.createElement('section');
 
       function addTitleToBody() {
         title.innerText = titleText;
@@ -73,6 +77,23 @@
         body.appendChild(main);
       }
       addMainToBody();
+
+      function addSectionToMain() {
+        centerSection.className = 'center-content';
+        leftSection.className = 'left-content';
+        rightSection.className = 'right-content';
+        main.appendChild(centerSection);
+        main.appendChild(leftSection);
+        main.appendChild(rightSection);
+      }
+      addSectionToMain();
+
+      function addParagraphToSection() {
+        centerSectionParagraph.innerText = 'I`m the second paragraph :)';
+        centerSection.appendChild(centerSectionParagraph);
+      }
+      addParagraphToSection();
+
 
     </script>
   </body>
