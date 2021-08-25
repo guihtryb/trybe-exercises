@@ -52,6 +52,7 @@
         */
     const secondParagraph = document.getElementsByTagName('p')[1];
     const mainContent = document.getElementsByClassName('main-content')[0];
+    const centerContent = document.getElementsByClassName('center-content')[0];
 
     function changeSecondParagraphText() {
       return secondParagraph.innerText = "A man who has studied a lot then resolve problems and generate value is what brings my freedom and happines"
@@ -59,9 +60,14 @@
     changeSecondParagraphText();
 
     function changeMainBackgroundColor() {
-      return mainContent.style.backgroundColor = 'white';
+      return mainContent.style.backgroundColor = 'green';
     }
     changeMainBackgroundColor();
+
+    function changeCenterContentColor() {
+      return centerContent.style.backgroundColor = 'White';
+    }
+    changeCenterContentColor();
     </script>
   </body>
 </html>
