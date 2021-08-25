@@ -55,6 +55,7 @@
     const mainContent = document.getElementsByClassName('main-content')[0];
     const centerContent = document.getElementsByClassName('center-content')[0];
     const title = document.getElementsByClassName('title')[0];
+    const allParagraphs = document.getElementsByTagName('p');
 
     function changeSecondParagraphText() {
       return secondParagraph.innerText = myselfTwoYearsAfter;
@@ -80,6 +81,15 @@
       return secondParagraph.innerText = myselfTwoYearsAfter.toUpperCase()
     }
     secondParagraphToUpperCase();
+
+    function showAllParagraphsInConsole() {
+      for (let index = 0; index < allParagraphs.length; index++) {
+        const paragraph = allParagraphs[index];
+        console.log(paragraph.innerText);
+      }
+    }
+    showAllParagraphsInConsole();
+
 
     </script>
   </body>
