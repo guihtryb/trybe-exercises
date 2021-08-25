@@ -53,6 +53,7 @@
     const secondParagraph = document.getElementsByTagName('p')[1];
     const mainContent = document.getElementsByClassName('main-content')[0];
     const centerContent = document.getElementsByClassName('center-content')[0];
+    const title = document.getElementsByClassName('title')[0];
 
     function changeSecondParagraphText() {
       return secondParagraph.innerText = "A man who has studied a lot then resolve problems and generate value is what brings my freedom and happines"
@@ -68,6 +69,12 @@
       return centerContent.style.backgroundColor = 'White';
     }
     changeCenterContentColor();
+
+    function fixTitleText() {
+      return  title.innerText = 'Exercício 5.1 - JavaScript'
+    }
+    fixTitleText();
+
     </script>
   </body>
 </html>
