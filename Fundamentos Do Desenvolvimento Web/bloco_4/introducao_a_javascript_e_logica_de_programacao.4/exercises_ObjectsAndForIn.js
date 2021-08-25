@@ -23,3 +23,9 @@ console.log(info);
 for (let key in info) {
   console.log(key);
 }
+
+// Exercise 4 - Do a for/in that shows all the values of the 'info' object keys
+
+for (let key in info) {
+  console.log(info[key]);
+}
