@@ -41,6 +41,6 @@ let info2 = {
 
 // if the values in 'recurrent' are equals, log 'Both recurring'
 for (let key in info1 ) {
-  if (info1[key] === info2[key]) console.log('Both recurring');
+  if (key === 'recurrent' && info1[key] === 'Yes' && info2[key]  === 'Yes') console.log('Both recurring');
   else console.log(info1[key] + ' and ' + info2[key]);
 }
