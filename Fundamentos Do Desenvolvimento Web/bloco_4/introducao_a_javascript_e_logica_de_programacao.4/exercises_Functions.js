@@ -74,4 +74,17 @@ function sum(num) {
   return result
 };
 
+// Exercise 7 - Declare a function that receiveis an string 'word' and and other 'ending'. Verifies if the string ending matches with the end of 'word'.
 
+function isEnding(word, ending) {
+  if (ending.length > word.length) return false;
+
+  for (let index = 1; index <= ending.length; index += 1) {
+    if (word[word.length - index] !== ending[ending.length - index]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isEnding('betrybe', 'be'));
