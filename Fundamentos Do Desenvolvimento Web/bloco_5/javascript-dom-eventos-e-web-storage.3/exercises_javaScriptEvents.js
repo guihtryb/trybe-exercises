@@ -39,3 +39,35 @@ function putDaysInCalendar() {
   }
 }
 putDaysInCalendar();
+
+function createHolidayButton(string) {
+  const newButton = document.createElement('button');
+  newButton.innerText = string;
+  newButton.id = 'btn-holiday';
+  const btnContainer = document.getElementsByClassName('buttons-container')[0];
+  btnContainer.appendChild(newButton);
+}
+
+createHolidayButton('Feriados');
+
+let showHolidays = false;
+function changeHolidaysColor() {
+  const holidays = document.getElementsByClassName('holiday');
+  if (!showHolidays) {
+    for(let holiday of holidays) {
+      holiday.style.backgroundColor = 'deeppink';
+      holiday.style.color = 'black'
+    }
+    showHolidays = true;
+  } else {
+    for(let holiday of holidays) {
+      holiday.style.backgroundColor = 'unset';
+      holiday.style.color = 'grey'
+    }
+    showHolidays = false;
+  }
+}
+
+
+
+document.getElementById('btn-holiday').addEventListener('click', changeHolidaysColor);
