@@ -68,6 +68,34 @@ function changeHolidaysColor() {
   }
 }
 
-
-
 document.getElementById('btn-holiday').addEventListener('click', changeHolidaysColor);
+
+function createFridaysButton(string) {
+  const newFridayButton = document.createElement('button');
+  newFridayButton.id = 'btn-friday';
+  newFridayButton.innerText = string;
+  const btnContainer = document.getElementsByClassName('buttons-container')[0];
+  btnContainer.appendChild(newFridayButton);
+}
+
+createFridaysButton('Sexta-feira');
+
+let showFridaysAlreadyRequested = false;
+function showFridays() {
+  const fridays = document.getElementsByClassName('friday');
+  let day = 4;
+  if (!showFridaysAlreadyRequested) {
+    for(let friday of fridays) {
+      friday.innerText = 'Mufasa ON!'
+    }
+    showFridaysAlreadyRequested = true;
+  } else {
+    for(let friday of fridays) {
+      friday.innerText = day;
+      day < 25 ? day += 7: day = 4;
+    }
+    showFridaysAlreadyRequested = false;
+  }
+}
+
+document.getElementById('btn-friday').addEventListener('click', showFridays);
