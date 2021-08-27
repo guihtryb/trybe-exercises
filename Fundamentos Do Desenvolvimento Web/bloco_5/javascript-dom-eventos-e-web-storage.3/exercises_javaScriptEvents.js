@@ -99,3 +99,26 @@ function showFridays() {
 }
 
 document.getElementById('btn-friday').addEventListener('click', showFridays);
+
+
+
+function zoomOn() {
+  const days = document.getElementsByClassName('days');
+  for(let day of days) {
+    day.addEventListener('mouseover', function(event) {
+      event.target.style.fontSize = '25px'
+    });
+  }
+}
+zoomOn();
+
+function zoomOut() {
+  const days = document.getElementsByClassName('days');
+  for(let day of days) {
+    day.addEventListener('mouseleave', function(event) {
+      event.target.style.fontSize = '20px';
+    });
+  }
+}
+
+zoomOut();
