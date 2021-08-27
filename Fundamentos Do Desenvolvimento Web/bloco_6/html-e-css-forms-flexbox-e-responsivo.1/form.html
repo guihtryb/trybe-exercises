@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <form action="">
+  <fieldset>
+    <legend>Dados pessoais:</legend>
+    <label for="name">
+    <input type="text" placeholder="Name" id="name" max="40" required>
+    </label>
+    <label for="email">
+    <input type="text" placeholder="Email" id="email" max="50" required>
+    </label>
+    <label for="cpf">
+      <input type="text" placeholder="CPF" id="cpf" required>
+    </label>
+    <label for="adress">
+      <input type="text" placeholder="Adress" id="adress" required>      
+    </label>
+    <label for="city">
+      <input type="text" placeholder="City" id="city" required>
+    </label>
+    <label for="states">
+      <select name="states" id="states" required>
+      </select>
+    </label>
+    <br/>
+    <label for="residence" aria-required="true"> Type of residence:
+      <input type="radio" id="house" value="house" name="residence">House
+      <input type="radio" id="appartement" value="appartement" name="residence">Appartement
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Do your resume:</legend>
+    <textarea id="resume" name="resume" maxlength="1000" placeholder="About you"  required></textarea>
+    <input placeholder="Job Title" maxlength="40" required>
+    <textarea name="description" id="description" maxlength="500" placeholder="Description of the Job Title"></textarea>
+    <input type="text" name="initData" id="initData" placeholder="initial date">
+  </fieldset>
+  <button type="submit" id="submit">Submit Forms</button>  
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
