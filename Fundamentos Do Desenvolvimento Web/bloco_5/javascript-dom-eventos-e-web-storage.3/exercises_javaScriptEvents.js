@@ -50,21 +50,18 @@ function createHolidayButton(string) {
 
 createHolidayButton('Feriados');
 
-let showHolidays = false;
 function changeHolidaysColor() {
   const holidays = document.getElementsByClassName('holiday');
-  if (!showHolidays) {
-    for(let holiday of holidays) {
-      holiday.style.backgroundColor = 'deeppink';
-      holiday.style.color = 'black'
-    }
-    showHolidays = true;
-  } else {
+  if (holidays[0].style.backgroundColor.includes('deeppink')) {
     for(let holiday of holidays) {
       holiday.style.backgroundColor = 'unset';
       holiday.style.color = 'grey'
     }
-    showHolidays = false;
+  } else {
+    for(let holiday of holidays) {
+      holiday.style.backgroundColor = 'deeppink';
+      holiday.style.color = 'black'
+    }
   }
 }
 
@@ -141,8 +138,6 @@ function addDescriptionToTask(color) {
 
 addDescriptionToTask('yellow');
 
-let clicked = false;
-
 function addTaskSelectedToTasks() {
   const tasks = document.getElementsByClassName('task');
   const myTasks = document.getElementsByClassName('my-tasks')[0];
@@ -150,14 +145,12 @@ function addTaskSelectedToTasks() {
   myTasks.appendChild(infoIsSelected);
   for (task of tasks) {
     task.addEventListener('click', function(event) {
-      if(!clicked) {
-        event.target.classList.add('selected');
-        clicked = true;
-        infoIsSelected.innerText = ' ->Selected!'
-      } else {
+      if(event.target.className.includes('selected')) {
         event.target.classList.remove('selected');
         infoIsSelected.innerText = ''
-        clicked = false;
+      } else {
+        event.target.classList.add('selected');
+        infoIsSelected.innerText = ' ->Selected!'
       }      
     });  
   }
