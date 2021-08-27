@@ -26,8 +26,13 @@
       <input type="text" placeholder="City" id="city" required>
     </label>
     <label for="states">
-      <select name="states" id="states">
+      <select name="states" id="states" required>
       </select>
+    </label>
+    <br/>
+    <label for="residence" aria-required="true"> Type of residence:
+      <input type="radio" id="house" value="house" name="residence">House
+      <input type="radio" id="appartement" value="appartement" name="residence">Appartement
     </label>
   </fieldset>
   </form>
