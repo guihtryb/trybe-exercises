@@ -31,7 +31,7 @@ const states = [
 window.onload = function() {
 console.log('it`s working!');
 
-function addStatesToSelect() {
+function addOptionsToSelect() {
     const select = document.getElementById('states');
     for(state of states) {
       const option = document.createElement('option');
@@ -40,15 +40,29 @@ function addStatesToSelect() {
     }
   }
 
-addStatesToSelect();
+addOptionsToSelect();
+}
+
+// console.log(dataInput);
+function verifieData() {
+  const dataInput = document.getElementById('initData');
+  const dataInputValue = dataInput.value;
+  const correctFormat = dataInputValue.includes('/') 
+  if(!correctFormat) return alert('Incorrect date format!')
+  let splittedData = dataInputValue.split('/');
+  
+  let day = splittedData[0];
+  let month = splittedData[1];
+  let year = splittedData[2];
+
+  if(day < 0 || day > 30) return alert('Invalid day');
+
+  if(month < 0 || month > 12) return alert('Invalid mounth');
+
+  if(year < 0) return alert('Invalid year');
 }
 
 
-for(state of states) {
-  // const option = document.createElement('option');
-  // option.innerText = `${Object.keys(states[state])} - ${Object.values(states[state])}`
-  // select.appendChild(option);
-  console.log();
-}
-
+const submitButton = document.getElementById('submit');
+submitButton.addEventListener("click", verifieData);
 

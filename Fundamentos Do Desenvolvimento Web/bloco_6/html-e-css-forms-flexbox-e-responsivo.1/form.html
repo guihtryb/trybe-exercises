@@ -35,7 +35,16 @@
       <input type="radio" id="appartement" value="appartement" name="residence">Appartement
     </label>
   </fieldset>
-  </form>
+  <fieldset>
+    <legend>Do your resume:</legend>
+    <textarea id="resume" name="resume" maxlength="1000" placeholder="About you"  required></textarea>
+    <input placeholder="Job Title" maxlength="40" required>
+    <textarea name="description" id="description" maxlength="500" placeholder="Description of the Job Title"></textarea>
+    <input type="text" name="initData" id="initData" placeholder="initial date">
+  </fieldset>
+  <button type="submit" id="submit">Submit Forms</button>  
+</form>
+
 <script src="script.js"></script>
 </body>
 </html>
