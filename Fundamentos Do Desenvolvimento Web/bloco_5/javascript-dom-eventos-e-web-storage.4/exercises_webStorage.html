@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style it!</title>
+</head>
+<style>
+  header {
+    text-align: center;
+  }
+.content {
+  box-shadow: 2px 8px 32px black;
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  margin: 10px;
+}
+.to-style {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.to-style > section{
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+</style>
+<body>
+  <header>Style it!</header>
+  <section class="to-style">
+    <section id="background-color">
+      <h4>Choose a background color:</h4>
+      <button>orangered</button>
+      <button>dark</button>
+      <button>yellow</button>
+      <button>white</button>
+      <button>seagreen</button>
+    </section>
+    <section id="text-color">
+      <h4>Choose the text color:</h4>
+      <button>black</button>
+      <button>red</button>
+      <button>white</button>
+      <button>orange</button>
+    </section>
+    <section id="font-size">
+      <h4>Choose the font size:</h4>
+      <button>18px</button>
+      <button>20px</button>
+      <button>22px</button>
+      <button>24px</button>
+      <button>26px</button>
+    </section>
+    <section id="line-height">
+      <h4>Choose the line height:</h4>
+      <button>1</button>
+      <button>normal</button>
+      <button>1.5</button>
+      <button>2.0</button>
+    </section>
+    <section id="font-family">
+      <h4>Choose a font family:</h4>
+      <button>Times New Roman</button>
+      <button>Arial</button>
+      <button>Harry (not working yet)</button>
+    </section>
+  </section>
+  <section class="content">
+    <article class="description">
+      <h1>Lorem ipsum</h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>
+  </section>
+<script src="exercises_webStorage.js"></script>
+</body>
+</html>
