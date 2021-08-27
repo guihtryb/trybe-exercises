@@ -122,3 +122,91 @@ function zoomOut() {
 }
 
 zoomOut();
+
+function addTaskToCalendar(task) {
+  const myTasks = document.getElementsByClassName('my-tasks')[0];
+  const newTask = document.createElement('span');
+  newTask.innerText = task;
+  myTasks.appendChild(newTask);
+}
+addTaskToCalendar('Work in the bee company');
+
+function addDescriptionToTask(color) {
+  const myTasks = document.getElementsByClassName('my-tasks')[0];
+  const newDiv = document.createElement('div');
+  newDiv.style.backgroundColor = color;
+  newDiv.className = 'task';
+  myTasks.appendChild(newDiv);
+}
+
+addDescriptionToTask('yellow');
+
+let clicked = false;
+
+function addTaskSelectedToTasks() {
+  const tasks = document.getElementsByClassName('task');
+  const myTasks = document.getElementsByClassName('my-tasks')[0];
+  const infoIsSelected = document.createElement('span');
+  myTasks.appendChild(infoIsSelected);
+  for (task of tasks) {
+    task.addEventListener('click', function(event) {
+      if(!clicked) {
+        event.target.classList.add('selected');
+        clicked = true;
+        infoIsSelected.innerText = ' ->Selected!'
+      } else {
+        event.target.classList.remove('selected');
+        infoIsSelected.innerText = ''
+        clicked = false;
+      }      
+    });  
+  }
+}
+addTaskSelectedToTasks();
+
+
+function addColorSubtitleToDay() {
+  const days = document.getElementsByClassName('days');
+  for (let day of days) {
+    day.addEventListener('click', function(event) {
+      const selected = document.getElementsByClassName('selected')[0];
+      if(selected) {
+        if(event.target.style.color.includes(selected.style.backgroundColor)) {
+          event.target.style.color = 'rgb(119, 119, 119)';
+        } else {
+          event.target.style.color = selected.style.backgroundColor;
+        }
+      } 
+      else null;
+    });
+  }
+}
+
+
+addColorSubtitleToDay();
+
+function addAppointments() {
+  const input = document.getElementById('task-input');
+  const appointmentsButton = document.getElementById('btn-add');
+  const appointmentsList = document.getElementsByClassName('task-list')[0];
+  appointmentsButton.addEventListener('click', function() {
+    const newAppointment = document.createElement('li')
+    if (input.value) {
+      newAppointment.innerText = input.value;
+      appointmentsList.appendChild(newAppointment);  
+      input.value = ''
+    } else {
+      alert('Digite algo!')
+    }
+  });
+  input.addEventListener('keyup', function(e) {
+    if (input.value.length > 0 && e.keyCode === 13) {
+      let newAppointment = document.createElement('li')
+      newAppointment.innerText = input.value;
+  
+      appointmentsList.appendChild(newAppointment);  
+      input.value = '';
+    }
+  }); 
+}
+addAppointments();
