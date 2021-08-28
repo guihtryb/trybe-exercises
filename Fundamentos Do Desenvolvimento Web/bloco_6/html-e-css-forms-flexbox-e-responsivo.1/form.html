@@ -4,45 +4,79 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
   <title>Forms</title>
 </head>
 <body>
-  <form action="">
+  <header id="resume-form-header" class="box-style">
+    <h1>Submmit resume</h1>
+    <p><em>Do you want work with us? fill the form:</em></p>
+  </header>
+  <form action="" class="box-style">
   <fieldset>
     <legend>Dados pessoais:</legend>
+    <div class="line-content">
     <label for="name">
     <input type="text" placeholder="Name" id="name" max="40" required>
     </label>
+    </div>
+    <div class="line-content">
     <label for="email">
     <input type="text" placeholder="Email" id="email" max="50" required>
     </label>
+    </div>
+    <div class="line-content">
     <label for="cpf">
       <input type="text" placeholder="CPF" id="cpf" required>
     </label>
+    </div>
+    <div class="line-content">
     <label for="adress">
       <input type="text" placeholder="Adress" id="adress" required>      
     </label>
+    </div>
+    <div class="line-content">
     <label for="city">
       <input type="text" placeholder="City" id="city" required>
     </label>
+    </div>
+    <div class="line-content">
     <label for="states">
       <select name="states" id="states" required>
       </select>
     </label>
+    </div>
     <br/>
+    <div class="line-content">
     <label for="residence" aria-required="true"> Type of residence:
+      <label for="house">
       <input type="radio" id="house" value="house" name="residence">House
+    </label>
+    <label for="appartement">
       <input type="radio" id="appartement" value="appartement" name="residence">Appartement
     </label>
+    </label>
+    </div>
   </fieldset>
   <fieldset>
     <legend>Do your resume:</legend>
+    <div class="line-content">
     <textarea id="resume" name="resume" maxlength="1000" placeholder="About you"  required></textarea>
-    <input placeholder="Job Title" maxlength="40" required>
+    </div>
+    <div class="line-content">
+    <input placeholder="Job Title" maxlength="40" type="text" required>
+    </div>
+    <div class="line-content">
     <textarea name="description" id="description" maxlength="500" placeholder="Description of the Job Title"></textarea>
+    </div>
+    <div class="line-content">
     <input type="text" name="initData" id="initData" placeholder="initial date">
+    </div>
   </fieldset>
-  <button type="submit" id="submit">Submit Forms</button>  
+  <div class="btns-container">
+    <button type="submit" id="submit">Submit Form</button> 
+    <button type="reset" id="clear-button">Clear</button> 
+  </div>
 </form>
 
 <script src="script.js"></script>
