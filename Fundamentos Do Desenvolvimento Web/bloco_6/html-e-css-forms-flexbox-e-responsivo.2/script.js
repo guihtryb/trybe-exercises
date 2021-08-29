@@ -32,13 +32,13 @@ window.onload = function() {
 console.log('it`s working!');
 
 function addOptionsToSelect() {
-    const select = document.getElementById('states');
-    for(state of states) {
-      const option = document.createElement('option');
-      option.innerText = `${Object.keys(state)} -${Object.values(state)}`
-      select.appendChild(option);
-    }
+  const select = document.getElementById('states');
+  for(state of states) {
+    const option = document.createElement('option');
+    option.innerText = `${Object.keys(state)} - ${Object.values(state)}`
+    select.appendChild(option);
   }
+}
 
 addOptionsToSelect();
 }
@@ -66,3 +66,8 @@ function verifieData() {
 const submitButton = document.getElementById('submit');
 submitButton.addEventListener("click", verifieData);
 
+const resetButton = document.getElementById("reset");
+resetButton.addEventListener('click', function() {
+  const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  myModal.show();
+});
