@@ -39,7 +39,8 @@ body {
 }
 
 button {
-  background-color: seagreen;
+  background-color: darkslateblue;
+  color: azure;
   font-size: 16px;
   font-weight: bolder;
   border-radius: 5px;
@@ -50,5 +51,5 @@ button {
 
 fieldset {
   margin: 30px auto;
-  border-color: rgb(214, 217, 220);
+  border-color: rgb(74, 77, 80);
 }
