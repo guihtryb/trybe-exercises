@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <title>Forms</title>
+</head>
+<body>
+  <header class="card-header card text-center">
+    <h1 class="display-4">Submmit resume</h1>
+    <p class="lead"><em>Do you want work with us? fill the form:</em></p>
+  </header>
+  <form action="">
+  <fieldset class="container">
+    <legend>Dados pessoais:</legend>
+    <label for="name" class="form-label">
+    <input type="text" placeholder="Name" max="40" class="form-control" required>
+    </label>
+    <label for="email" class="form-label">
+    <input type="text" placeholder="Email" id="email" max="50" class="form-control" required>
+    </label>
+    <label for="cpf" class="form-label">
+      <input type="text" placeholder="CPF" id="cpf" required class="form-control">
+    </label>
+    <label for="adress" class="form-label">
+      <input type="text" placeholder="Adress" id="adress" required class="form-control">
+    </label>
+    <label for="city" class="form-label">
+      <input type="text" placeholder="City" id="city" class="form-control" required>
+    </label>
+    <label for="states" class="form-label">
+      <select name="states" id="states" required>
+      </select>
+    </label>
+    <br/>
+    <div class="form-check">
+    <label for="house" aria-required="true" class="form-label"> Type of residence:
+      <input type="radio" id="house" value="house" name="residence">House
+    </label>
+    <label for="appartement" class="form-label">
+      <input type="radio" id="appartement" value="appartement" name="residence">Appartement
+    </label>
+  </div>
+  </fieldset>
+  <fieldset class="container">
+    <legend>Do your resume:</legend>
+    <textarea id="resume" name="resume" maxlength="1000" placeholder="About you"  required></textarea>
+    <input placeholder="Job Title" class="form-control" maxlength="40" type="text" required>
+    <textarea name="description" id="description" maxlength="500" placeholder="Description of the Job Title"></textarea>
+    <input type="text" name="initData" id="initData" class="form-control" placeholder="initial date">
+  </fieldset>
+  <div class="container">
+    <button type="submit" id="submit">Submit Form</button> 
+    <button type="reset">Clear</button> 
+  </div>
+  </form>
+
+<script src="script.js"></script>
+</body>
+</html>
