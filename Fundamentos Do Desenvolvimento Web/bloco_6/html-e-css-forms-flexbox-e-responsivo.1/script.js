@@ -47,6 +47,7 @@ addOptionsToSelect();
 function verifieData() {
   const dataInput = document.getElementById('initData');
   const dataInputValue = dataInput.value;
+  if(dataInputValue.length > 0) {
   const correctFormat = dataInputValue.includes('/') 
   if(!correctFormat) return alert('Incorrect date format!')
   let splittedData = dataInputValue.split('/');
@@ -60,6 +61,8 @@ function verifieData() {
   if(month < 0 || month > 12) return alert('Invalid mounth');
 
   if(year < 0) return alert('Invalid year');
+  }
+  else null;
 }
 
 
