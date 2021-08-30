@@ -65,12 +65,24 @@ const books = [
 
 // Exercise 1 - Find the name of the first person writer that born in 1947
 
-function authorBornIn1947() {
-  return books.find((book) => book.author.birthYear === 1947).author.name; 
+// function authorBornIn1947() {
+  // return books.find((book) => book.author.birthYear === 1947).author.name; 
+// }
+// authorBornIn1947();
+
+// assert.strictEqual(authorBornIn1947(), 'Stephen King');
+
+// Exercise 2 - 
+
+function smallerName() {
+    let nameBook = books[0].name;
+    // escreva aqui o seu código
+    books.forEach((book) => {
+      book.name.length < nameBook.length ? nameBook = book.name : nameBook;
+    });
+    // Variável nameBook que receberá o valor do menor nome;
+    return nameBook;
 }
-authorBornIn1947();
 
-assert.strictEqual(authorBornIn1947(), 'Stephen King');
 
-module.exports = books;
-
+assert.strictEqual(smallerName(), 'Duna');
