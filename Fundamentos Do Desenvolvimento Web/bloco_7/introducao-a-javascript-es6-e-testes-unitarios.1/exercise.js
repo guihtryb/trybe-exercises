@@ -10,3 +10,10 @@ const testingScope = (escopo) => {
 };
 
 testingScope(true);
+
+// Exercise 2 
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+const oddsAndEvansSorted = oddsAndEvens.sort((a, b) => a - b);
+
+console.log(`The numbers ${oddsAndEvansSorted} are in ascending order!`);
