@@ -66,8 +66,11 @@ const books = [
 // Exercise 1 - Find the name of the first person writer that born in 1947
 
 function authorBornIn1947() {
-  return books.find((book) => book.author.birthYear === 1947).author.name;
+  return books.find((book) => book.author.birthYear === 1947).author.name; 
 }
 authorBornIn1947();
-  
+
+assert.strictEqual(authorBornIn1947(), 'Stephen King');
+
+module.exports = books;
 
