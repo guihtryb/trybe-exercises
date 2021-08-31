@@ -9,7 +9,7 @@
 
 <h2> <em>Trilha de aprendizagem</em> </h2>
 
-<h3> 🟩💻 Fundamentos do Desenvolvimento Web </h3>
+<h3> ◾️💻 Fundamentos do Desenvolvimento Web 🟩</h3>
 <h3>Bloco 01: Unix & Bash</h3>
 <p>✅ 1.3 Fundamentos do Desenvolvimento Web</p>
 <p>✅ 1.3 Unix & Shell - Introdução</p>
@@ -77,7 +77,7 @@
 <p>✅10.3 Jest - Simulando comportamentos</p>
 <p>✅10.4 Projeto - Jest Assíncrono e Mocking</p>
 
-<h3> ⬜️💎 Desenvolvimento Front-End </h3>
+<h3> ◾️💎 Desenvolvimento Front-End ⬜️ </h3>
 
 <h3>Bloco 11: Introdução à React</h3>
 <p>✅11.1 Introdução - Front-end</p>
