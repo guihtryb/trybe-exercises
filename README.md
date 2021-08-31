@@ -1,7 +1,7 @@
 # Trybe-exercises
 
 <p> Este repositório contém todos os exercícios práticos realizados por mim, 
-<a href="https://www.linkedin.com/in/guilherme-viana-097a7b210/">Guilherme Viana</a> durante minha trajetória de aprendizagem na <a href="https://www.betrybe.com/">Trybe!</a>💚🚀</p>
+<a href="https://www.linkedin.com/in/guilherme-viana-097a7b210/">Guilherme Viana</a>, durante minha trajetória de aprendizagem na <a href="https://www.betrybe.com/">Trybe!</a>💚🚀</p>
 
 <p><em>"A escola que te ensina a programar, a aprender e a trabalhar."</em></p>
 
