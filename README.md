@@ -51,7 +51,7 @@
 <p><em>✅6.3 Introdução - CSS Flexbox</em></p>
 <p><em>✅6.3 CSS Flexbox - Parte 1</em></p>
 <p><em>✅6.4 CSS Flexbox - Parte 2</em></p>
-<p><em>✅6.5 CSS Responsivo - Mobile First</p>
+<p><em>✅6.5 CSS Responsivo - Mobile First</em></p>
 <p><em>✅6.6 Projeto - Trybewarts</em></p>
 
 <h3>Bloco 07: Introdução à JavaScript ES6 e Testes Unitários</h3>
@@ -84,7 +84,7 @@
 <p><em>✅11.1 Introdução - Front-end</em></p>
 <p><em>✅11.1: Introdução - React</em></p>
 <p><em>✅11.1: 'Hello, world!' no React!</em></p>
-<p><em>✅11.2: Componentes React</p>
+<p><em>✅11.2: Componentes React</em></p>
 <p><em>✅11.3: Projeto - Movie Cards Library</em></p>
 
 <h3>Bloco 12: Componentes com Estado, Eventos e Formulários com React</h3>
