@@ -1,0 +1,18 @@
+.pokemon-card {
+  border-radius: 10px;
+  background-color: rgb(214, 217, 220);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  margin: 25px;
+  align-items: center;
+  width: 220px;
+  transition: transform 500ms;
+  border: 1px solid #303030;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 6px 8px 12px black;
+}
