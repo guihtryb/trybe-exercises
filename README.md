@@ -135,30 +135,36 @@
 <p>20.3 Filtrando dados de forma específica</p>
 <p>20.4 Manipulando tabelas</p>
 <p>20.5 Projeto - All For One</p>
+
 <h3>Bloco 21: Funções SQL, Joins e Subqueries</h3>
 <p>21.1 Funções mais usadas no SQL</p>
 <p>21.2 Descomplicando JOINs, UNIONs e Subqueries</p>
 <p>21.3 Stored Routines & Stored Functions</p>
 <p>21.4 Projeto - Vocabulary Booster</p>
+
 <h3>Bloco 22: Normalização e Modelagem de Banco de Dados</h3>
 <p>22.1 Transformando ideias em um modelo de banco de dados - Parte 1</p>
 <p>22.2 Normalização, Formas Normais e Dumps</p>
 <p>22.3 Transformando ideias em um modelo de banco de dados - Parte 2</p>
 <p>22.4 Projeto - One For All</p>
+
 <h3>Bloco 23: Introdução ao MongoDB</h3>
 <p>23.1 Introdução - NoSQL</p>
 <p>23.1 MongoDB - Introdução</p>
 <p>23.2 Filter Operators</p>
 <p>23.3 Projeto - Data Flights</p>
+
 <h3>Bloco 24: MongoDB: Updates Simples e Complexos</h3>
 <p>24.1 Updates Simples</p>
 <p>24.2 Updates Complexos - Arrays - Parte 1</p>
 <p>24.3 Updates Complexos - Arrays - Parte 2</p>
 <p>24.4 Projeto - Commerce</p>
+
 <h3>Bloco 25: MongoDB: Aggregation Framework</h3>
 <p>25.1 Aggregation Framework - Parte 1</p>
 <p>25.2 Aggregation Framework - Parte 2</p>
 <p>25.3 Projeto - Aggregations</p>
+
 <h3>Bloco 26: Introdução ao desenvolvimento Web com NodeJS</h3>
 <p>26.1 Intro - NodeJS</p>
 <p>26.1 Node.js - Introdução</p>
@@ -167,6 +173,7 @@
 <p>26.4 Express: HTTP com Node.js</p>
 <p>26.5 Express: Middlewares</p>
 <p>06: Projeto - Talker Manager</p>
+
 <h3>Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful</h3>
 <p>27.1 Introdução - Arquitetura de Software</p>
 <p>27.1 Arquitetura de Software - Camada de Model</p>
@@ -174,26 +181,69 @@
 <p>27.3 Arquitetura Web - Rest e Restful</p>
 <p>27.4 Arquitetura de Software - Testando as Camadas</p>
 <p>27.5 Projeto - Store Manager</p>
+
 <h3>Bloco 28: Autenticação e Upload de Arquivos</h3>
 <p>28.1 NodeJS - JWT - (JSON Web Token)</p>
 <p>28.2 NodeJS - Upload de arquivos com `multer`</p>
 <p>28.3 NodeJS - Testando APIs com Testes de Integração</p>
 <p>28.4 Projeto - Cookmaster</p>
+
 <h3>Bloco 29: Deployment</h3>
 <p>29.1 Introdução - Deploy</p>
 <p>29.1 Infraestrutura - Deploy com Heroku</p>
 <p>29.2 Deploy - Gerenciadores de Processos</p>
 <p>29.3 Projeto - Stranger Things</p>
+
 <h3>Bloco 30: Arquitetura: SOLID e ORM</h3>
 <p>30.1 Arquitetura - Princípios SOLID</p>
 <p>30.2 ORM - Interface da aplicação com o banco de dados</p>
 <p>30.3 ORM - Associations</p>
 <p>30.4 Projeto - API de Blogs</p>
+
 <h3>Bloco 31: Sockets</h3>
 <p>31.1 Arquitetura de Software - Camada de View</p>
 <p>31.2 Sockets - TCP/UDP & NET</p>
 <p>31.3 Sockets - Socket.io</p>
 <p>31.4 Sockets - Praticando Socket.io</p>
 <p>31.5 Projeto - Webchat</p>
+
 <h3>Bloco 32: Projeto - App de Delivery</h3>
 <p>32.1 Projeto - App de Delivery</p>
+
+<h3>Bloco 33: Introdução à Python</h3>
+<p>33.1 Introdução - Ciência da Computação</p>
+<p>33.1 Aprendendo Python</p>
+<p>33.2 Entrada e Saída de Dados</p>
+<p>33.3 Testes</p>
+<p>33.4 Projeto - Job Insights</p>
+
+<h3>Bloco 34: Programação Orientada a Objetos e Padrões de Projeto</h3>
+<p>34.1 Introdução à programação orientada a objetos</p>
+<p>34.2 Herança, Composição e Interfaces</p>
+<p>34.3 Padrões de projeto</p>
+<p>34.4 Projeto - Relatórios de Estoque</p>
+
+<h3>Bloco 35: Redes e Raspagem de Dados</h3>
+<p>35.1 Arquitetura de redes</p>
+<p>35.2 Redes de computadores, ferramentas e segurança</p>
+<p>35.3 Raspagem de Dados</p>
+<p>35.4 Projeto - Tech news</p>
+
+<h3>Bloco 36: Algoritmos</h3>
+<p>36.1 Complexidade de Algoritmos</p>
+<p>36.2 Recursividade e Estratégias para solução de problemas</p>
+<p>36.3 Algoritmos de ordenação e busca</p>
+<p>36.4 Projeto - Algoritmos</p>
+
+<h3>Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets</h3>
+<p>37.1 Arquitetura de Computadores</p>
+<p>37.2 Arrays</p>
+<p>37.3 Hashmap e Dict</p>
+<p>37.4 Set</p>
+<p>37.5 Projeto - Restaurant Orders</p>
+
+<h3>Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas</h3>
+<p>38.1 Nó e Listas Encadeadas</p>
+<p>38.2 Deque</p>
+<p>38.3 Pilhas</p>
+<p>38.4 Projeto - TING - Trybe Is Not Google</p>
