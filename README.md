@@ -12,6 +12,10 @@
 <h3> ◾️💻 Fundamentos do Desenvolvimento Web 🟩</h3>
 
 <h3>Bloco 01: Unix & Bash</h3>
+<section>
+  <option>1</option>
+  <option>2</option>
+</section>
 <p><em>✅ 1.3 Fundamentos do Desenvolvimento Web</em></p>
 <p><em>✅ 1.3 Unix & Shell - Introdução</em></p>
 <p><em>✅ 1.3 Unix & Bash - Parte 1</em></p>
