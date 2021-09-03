@@ -126,3 +126,74 @@
 
 <h3>Bloco 19: Projeto App de Receitas</h3>
 <p>19.1 Projeto - App de Receitas</p>
+
+<h3>Bloco 20: Introdução à SQL</h3>
+<p>20.1 Introdução - Back-end</p>
+<p>20.1 Introdução - Bancos de dados relacionais</p>
+<p>20.1 Banco de dados SQL</p>
+<p>20.2 Encontrando dados em um banco de dados</p>
+<p>20.3 Filtrando dados de forma específica</p>
+<p>20.4 Manipulando tabelas</p>
+<p>20.5 Projeto - All For One</p>
+<h3>Bloco 21: Funções SQL, Joins e Subqueries</h3>
+<p>21.1 Funções mais usadas no SQL</p>
+<p>21.2 Descomplicando JOINs, UNIONs e Subqueries</p>
+<p>21.3 Stored Routines & Stored Functions</p>
+<p>21.4 Projeto - Vocabulary Booster</p>
+<h3>Bloco 22: Normalização e Modelagem de Banco de Dados</h3>
+<p>22.1 Transformando ideias em um modelo de banco de dados - Parte 1</p>
+<p>22.2 Normalização, Formas Normais e Dumps</p>
+<p>22.3 Transformando ideias em um modelo de banco de dados - Parte 2</p>
+<p>22.4 Projeto - One For All</p>
+<h3>Bloco 23: Introdução ao MongoDB</h3>
+<p>23.1 Introdução - NoSQL</p>
+<p>23.1 MongoDB - Introdução</p>
+<p>23.2 Filter Operators</p>
+<p>23.3 Projeto - Data Flights</p>
+<h3>Bloco 24: MongoDB: Updates Simples e Complexos</h3>
+<p>24.1 Updates Simples</p>
+<p>24.2 Updates Complexos - Arrays - Parte 1</p>
+<p>24.3 Updates Complexos - Arrays - Parte 2</p>
+<p>24.4 Projeto - Commerce</p>
+<h3>Bloco 25: MongoDB: Aggregation Framework</h3>
+<p>25.1 Aggregation Framework - Parte 1</p>
+<p>25.2 Aggregation Framework - Parte 2</p>
+<p>25.3 Projeto - Aggregations</p>
+<h3>Bloco 26: Introdução ao desenvolvimento Web com NodeJS</h3>
+<p>26.1 Intro - NodeJS</p>
+<p>26.1 Node.js - Introdução</p>
+<p>26.2 Node.js - Fluxo Assíncrono</p>
+<p>26.3 Testes com NodeJS</p>
+<p>26.4 Express: HTTP com Node.js</p>
+<p>26.5 Express: Middlewares</p>
+<p>06: Projeto - Talker Manager</p>
+<h3>Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful</h3>
+<p>27.1 Introdução - Arquitetura de Software</p>
+<p>27.1 Arquitetura de Software - Camada de Model</p>
+<p>27.2 Arquitetura de Software - Camada de Controller e Service</p>
+<p>27.3 Arquitetura Web - Rest e Restful</p>
+<p>27.4 Arquitetura de Software - Testando as Camadas</p>
+<p>27.5 Projeto - Store Manager</p>
+<h3>Bloco 28: Autenticação e Upload de Arquivos</h3>
+<p>28.1 NodeJS - JWT - (JSON Web Token)</p>
+<p>28.2 NodeJS - Upload de arquivos com `multer`</p>
+<p>28.3 NodeJS - Testando APIs com Testes de Integração</p>
+<p>28.4 Projeto - Cookmaster</p>
+<h3>Bloco 29: Deployment</h3>
+<p>29.1 Introdução - Deploy</p>
+<p>29.1 Infraestrutura - Deploy com Heroku</p>
+<p>29.2 Deploy - Gerenciadores de Processos</p>
+<p>29.3 Projeto - Stranger Things</p>
+<h3>Bloco 30: Arquitetura: SOLID e ORM</h3>
+<p>30.1 Arquitetura - Princípios SOLID</p>
+<p>30.2 ORM - Interface da aplicação com o banco de dados</p>
+<p>30.3 ORM - Associations</p>
+<p>30.4 Projeto - API de Blogs</p>
+<h3>Bloco 31: Sockets</h3>
+<p>31.1 Arquitetura de Software - Camada de View</p>
+<p>31.2 Sockets - TCP/UDP & NET</p>
+<p>31.3 Sockets - Socket.io</p>
+<p>31.4 Sockets - Praticando Socket.io</p>
+<p>31.5 Projeto - Webchat</p>
+<h3>Bloco 32: Projeto - App de Delivery</h3>
+<p>32.1 Projeto - App de Delivery</p>
