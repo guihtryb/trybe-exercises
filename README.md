@@ -3,13 +3,11 @@
 <p> Este repositório contém todos os exercícios práticos realizados por mim, 
 <a href="https://www.linkedin.com/in/guilherme-viana-097a7b210/">Guilherme Viana</a>, durante minha trajetória de aprendizagem na <a href="https://www.betrybe.com/">Trybe!</a>💚🚀</p>
 
-<p><em>"A escola que te ensina a programar, a aprender e a trabalhar."</em></p>
-
 <p>São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento web, desenvolvimento, Front-End, Back-end, ciência da computação, engenharia de software, metodologias agéis e habilidades comportamentais.</p>
 
 <h2> <em>Trilha de aprendizagem</em> </h2>
 
-<h3> ◾️💻 Fundamentos do Desenvolvimento Web 🟩</h3>
+<h3> 🟩💻 Fundamentos do Desenvolvimento Web ✅</h3>
 
 <h3>Bloco 01: Unix & Bash</h3>
 <p><em>✅ 1.3 Fundamentos do Desenvolvimento Web</em></p>
@@ -78,7 +76,7 @@
 <p><em>✅10.3 Jest - Simulando comportamentos</em></p>
 <p><em>✅10.4 Projeto - Jest Assíncrono e Mocking</em></p>
 
-<h3> ◾️💎 Desenvolvimento Front-End ⬜️ </h3>
+<h3> 🟩 💎 Desenvolvimento Front-End ✅ </h3>
 
 <h3>Bloco 11: Introdução à React</h3>
 <p><em>✅11.1 Introdução - Front-end</em></p>
@@ -116,16 +114,18 @@
 <p>16.6 Projeto - Trybe Wallet</p>
 
 <h3>Bloco 17: Projeto Jogo de Trivia</h3>
-<p>17.1 Projeto - Jogo de Trivia</p>
+<p>✅17.1 Projeto - Jogo de Trivia</p>
 
 <h3>Bloco 18: Context API e React Hooks</h3>
-<p>18.1 Context API do React</p>
-<p>18.2 React Hooks - useState e useContext</p>
-<p>18.3 React Hooks - useEffect e Hooks customizados</p>
-<p>18.4 Projeto - StarWars Datatable com Context API e Hooks</p>
+<p>✅18.1 Context API do React</p>
+<p>✅18.2 React Hooks - useState e useContext</p>
+<p>✅18.3 React Hooks - useEffect e Hooks customizados</p>
+<p>✅18.4 Projeto - StarWars Datatable com Context API e Hooks</p>
 
 <h3>Bloco 19: Projeto App de Receitas</h3>
-<p>19.1 Projeto - App de Receitas</p>
+<p>✅19.1 Projeto - App de Receitas</p>
+
+<h3> ◾️👨‍💻 Desenvolvimento Back-End </h3>
 
 <h3>Bloco 20: Introdução à SQL</h3>
 <p>20.1 Introdução - Back-end</p>
