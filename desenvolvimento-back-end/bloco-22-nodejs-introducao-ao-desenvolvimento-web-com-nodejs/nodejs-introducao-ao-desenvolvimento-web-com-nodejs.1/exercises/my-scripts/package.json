@@ -4,6 +4,7 @@
   "description": "Exercises to practice node content",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "imc": "node imc.js",
     "velocidade": "node velocidade.js",
     "sorteio": "node sorteio.js",
