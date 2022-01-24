@@ -1,0 +1,15 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "Exercises to practice node content",
+  "main": "index.js",
+  "scripts": {
+    "imc": "node imc.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Viana",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
